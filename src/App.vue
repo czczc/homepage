@@ -5,8 +5,7 @@ import FiguresPanel from './components/FiguresPanel.vue'
 import MessagesPanel from './components/MessagesPanel.vue'
 import RndBench from './components/RndBench.vue'
 import EventDisplay from './components/EventDisplay.vue'
-import WebConstructs from './components/WebConstructs.vue'
-import ChannelsPanel from './components/ChannelsPanel.vue'
+import TabbedPane from './components/TabbedPane.vue'
 import FootBar from './components/FootBar.vue'
 </script>
 
@@ -22,8 +21,7 @@ import FootBar from './components/FootBar.vue'
       </div>
       <div class="stack">
         <EventDisplay />
-        <WebConstructs />
-        <ChannelsPanel />
+        <TabbedPane />
       </div>
     </div>
     <FootBar />

@@ -18,17 +18,86 @@ export const messages = [
     body: 'DOE Office of Science Early Career Research Program.' },
 ]
 
-export const rndBench =
-  'Liquid argon time projection chambers. Water-based liquid scintillator. ' +
-  'The readout electronics between a particle and its picture.'
+export const rndBench = [
+  { name: 'LArTPC', note: 'imaging neutrinos in liquid argon' },
+  { name: 'Reactor neutrinos', note: 'flux, spectra, anomalies' },
+  { name: 'Cold electronics', note: 'readout that lives in the argon' },
+]
 
-export const projects = [
-  { name: 'Bee', url: 'https://www.phy.bnl.gov/twister/bee/', stack: 'three.js',
-    note: '3D event display for Wire-Cell reconstruction, used across the LArTPC experiments. Source of the events above.' },
-  { name: 'CETS', url: 'https://www.phy.bnl.gov/twister/cets/hw/', stack: 'Django · HTMX',
-    note: 'Cold Electronics Tracking System — Hardware DB explorer for detector cold electronics.' },
-  { name: 'Cat-D University', url: 'https://www.phy.bnl.gov/~chao/catdu/', stack: 'Vue · Vite',
-    note: 'A growing catalog of AI-generated cat avatars, organized by school and department, like a university.' },
+// Selected publications — the list shown on https://www.bnl.gov/staff/czhang, same order.
+export const publications = {
+  fullList: { label: 'Full list on ORCID →', url: 'https://orcid.org/0000-0003-2298-6272' },
+  selected: [
+    { y: '2024', venue: 'Prog. Part. Nucl. Phys. 136',
+      title: 'Reactor antineutrino flux and anomaly',
+      doi: '10.1016/j.ppnp.2024.104106' },
+    { y: '2023', venue: 'Phys. Rev. Lett. 130',
+      title: 'Precision Measurement of Reactor Antineutrino Oscillation at Kilometer-Scale Baselines by Daya Bay',
+      doi: '10.1103/PhysRevLett.130.161802' },
+    { y: '2023', venue: 'Phys. Rev. Lett. 130',
+      title: 'First Constraints on Light Sterile Neutrino Oscillations from Combined Appearance and Disappearance Searches with the MicroBooNE Detector',
+      doi: '10.1103/PhysRevLett.130.011801' },
+    { y: '2022', venue: 'Phys. Rev. Lett. 128',
+      title: 'Search for an Excess of Electron Neutrino Interactions in MicroBooNE Using Multiple Final-State Topologies',
+      doi: '10.1103/PhysRevLett.128.241801' },
+    { y: '2022', venue: 'Phys. Rev. D 105',
+      title: 'Search for an anomalous excess of inclusive charged-current νe interactions in the MicroBooNE experiment using Wire-Cell reconstruction',
+      doi: '10.1103/PhysRevD.105.112005' },
+    { y: '2021', venue: 'Phys. Rev. Applied 15',
+      title: 'Cosmic Ray Background Rejection with Wire-Cell LArTPC Event Reconstruction in the MicroBooNE Detector',
+      doi: '10.1103/PhysRevApplied.15.064071' },
+    { y: '2020', venue: 'Nucl. Instrum. Meth. A 961',
+      title: 'Combined Neyman–Pearson chi-square: An improved approximation to the Poisson-likelihood chi-square',
+      doi: '10.1016/j.nima.2020.163677' },
+    { y: '2018', venue: 'JINST 13',
+      title: 'Three-dimensional imaging for large LArTPCs',
+      doi: '10.1088/1748-0221/13/05/p05032' },
+    { y: '2018', venue: 'Phys. Rev. Lett. 121',
+      title: 'First Search for Short-Baseline Neutrino Oscillations at HFIR with PROSPECT',
+      doi: '10.1103/PhysRevLett.121.251802' },
+    { y: '2017', venue: 'Phys. Rev. Lett. 118',
+      title: 'Evolution of the Reactor Antineutrino Flux and Spectrum at Daya Bay',
+      doi: '10.1103/PhysRevLett.118.251801' },
+    { y: '2016', venue: 'Phys. Rev. Lett. 116',
+      title: 'Measurement of the Reactor Antineutrino Flux and Spectrum at Daya Bay',
+      doi: '10.1103/PhysRevLett.116.061801' },
+    { y: '2015', venue: 'Nature Commun. 6',
+      title: 'Neutrino oscillation studies with reactors',
+      doi: '10.1038/ncomms7935' },
+    { y: '2014', venue: 'Phys. Rev. Lett. 113',
+      title: 'Search for a Light Sterile Neutrino at Daya Bay',
+      doi: '10.1103/PhysRevLett.113.141802' },
+    { y: '2014', venue: 'Phys. Rev. Lett. 112',
+      title: 'Spectral Measurement of Electron Antineutrino Oscillation Amplitude and Frequency at Daya Bay',
+      doi: '10.1103/PhysRevLett.112.061801' },
+    { y: '2013', venue: 'Phys. Rev. D 87',
+      title: 'Reactor antineutrino anomaly with known θ13',
+      doi: '10.1103/PhysRevD.87.073018' },
+    { y: '2012', venue: 'Phys. Rev. Lett. 108',
+      title: 'Observation of Electron-Antineutrino Disappearance at Daya Bay',
+      doi: '10.1103/PhysRevLett.108.171803' },
+  ],
+}
+
+export const hobbies = [
+  { name: 'Cats',
+    note: 'Chief morale officers — and the student body of Cat-D University, a growing catalog of AI-generated cat avatars.',
+    links: [
+      { label: 'Cat-D University', url: 'https://www.phy.bnl.gov/~chao/catdu/' },
+      { label: 'Cat videos', url: 'https://www.youtube.com/@czczc-25' },
+    ] },
+  { name: 'Soccer',
+    note: 'Watching the World Cup spoiler-free — I built a cat-friendly PWA for exactly that.',
+    links: [
+      { label: 'Cat World Cup 2026', url: 'https://czczc.github.io/fifa-wc-2026/' },
+    ] },
+  { name: 'Web development',
+    note: 'Sites and tools I built for the browser:',
+    links: [
+      { label: 'Bee', url: 'https://www.phy.bnl.gov/twister/bee/' },
+      { label: 'CETS', url: 'https://www.phy.bnl.gov/twister/cets/hw/' },
+      { label: 'Learning Wire-Cell', url: 'https://czczc.github.io/wire-cell-tutorial/' },
+    ] },
 ]
 
 export const channels = [

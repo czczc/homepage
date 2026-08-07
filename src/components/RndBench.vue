@@ -5,6 +5,11 @@ import { rndBench } from '../content.js'
 <template>
   <div class="panel">
     <div class="panel-h">R&amp;D BENCH</div>
-    <div class="panel-b" style="color:var(--ink-dim); font-size:12px">{{ rndBench }}</div>
+    <ul class="panel-b bench">
+      <li v-for="b in rndBench" :key="b.name">
+        <span class="b-name">{{ b.name }}</span>
+        <span class="b-note">{{ b.note }}</span>
+      </li>
+    </ul>
   </div>
 </template>
