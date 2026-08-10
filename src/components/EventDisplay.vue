@@ -177,10 +177,8 @@ onUnmounted(() => {
     </div>
     <div class="evd-foot hint-row">
       <span class="evd-hint">
-        Five real neutrino-beam events from the MicroBooNE detector, reconstructed by Wire-Cell
-        imaging and exported from <a href="https://www.phy.bnl.gov/twister/bee/" rel="noopener">Bee</a> —
-        the browser-based 3D event display I built. Each color is one reconstructed cluster
-        of drifted ionization charge. Drag to spin the TPC.
+        Neutrino-beam events from the MicroBooNE detector, reconstructed by Wire-Cell
+        imaging and exported from <a href="https://www.phy.bnl.gov/twister/bee/" rel="noopener">Bee</a>. Drag to spin the TPC. Can you find the neutrino interaction?
       </span>
     </div>
   </div>

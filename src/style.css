@@ -143,7 +143,7 @@ a:focus-visible, button:focus-visible, canvas:focus-visible{outline:2px solid va
 @media (max-width:700px){ .tabbar .tag{display:none} }
 
 /* ---------- publications ---------- */
-.pub{display:grid; grid-template-columns:44px 200px 1fr; gap:4px 18px; align-items:baseline; padding:8px 0; border-bottom:1px dashed var(--line); font-size:12px}
+.pub{display:grid; grid-template-columns:44px 140px 1fr; gap:4px 18px; align-items:baseline; padding:8px 0; border-bottom:1px dashed var(--line); font-size:12px}
 .pub .y{color:var(--muted)}
 .pub .venue{color:var(--muted); font-size:11px; letter-spacing:.04em}
 .pub .title a{color:var(--ink); border-bottom-color:var(--line-2)}

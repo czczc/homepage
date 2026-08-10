@@ -6,7 +6,7 @@ const activeCount = channels.filter(c => c.st !== 'done').length
 
 const tabs = [
   { id: 'experiments',  label: 'EXPERIMENTS',  tag: `${activeCount} active` },
-  { id: 'publications', label: 'SELECTED PUBLICATIONS', tag: `${publications.selected.length} shown, as on bnl.gov` },
+  { id: 'publications', label: 'SELECTED PUBLICATIONS', tag: `${publications.selected.length} shown` },
   { id: 'hobbies',      label: 'HOBBIES',      tag: 'off-shift channels, links included' },
 ]
 const cur = ref('experiments')
