@@ -100,6 +100,7 @@ export const hobbies = [
   { name: 'Web development',
     note: 'Sites and tools I built:',
     links: [
+      { label: 'NuGlass', url: 'https://czczc.github.io/nuglass/' },
       { label: 'Bee', url: 'https://www.phy.bnl.gov/twister/bee/' },
       { label: 'Hardware DB', url: 'https://www.phy.bnl.gov/twister/cets/hw/' },
       { label: 'EDG publications', url: 'https://www.phy.bnl.gov/~chao/edg-publications/' },
