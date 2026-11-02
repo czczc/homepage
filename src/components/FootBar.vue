@@ -1,5 +1,6 @@
 <script setup>
 import { uplinks, phone } from '../content.js'
+import LookSelect from './LookSelect.vue'
 </script>
 
 <template>
@@ -10,5 +11,6 @@ import { uplinks, phone } from '../content.js'
       <span class="num">{{ phone }}</span>
     </span>
     <span style="margin-left:auto">VUE 3 · NO BACKEND · NO TRACKING</span>
+    <LookSelect />
   </div>
 </template>

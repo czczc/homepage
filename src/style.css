@@ -189,3 +189,11 @@ td.note{color:var(--ink-dim); white-space:normal; min-width:220px}
   font-size:12px; color:var(--muted);
 }
 .footbar .links{display:flex; flex-wrap:wrap; gap:8px 22px}
+.look-select{display:inline-flex; align-items:baseline; gap:10px}
+.look-select select{
+  font-family:var(--mono); font-size:12px; color:var(--ink); cursor:pointer;
+  background:var(--panel-2); border:1px solid var(--line-2); padding:3px 6px;
+}
+.look-select select:hover{border-color:var(--amber)}
+.look-select select:focus-visible{outline:2px solid var(--amber-hi); outline-offset:2px}
+.look-select__lbl{text-transform:uppercase}
